@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	bottom: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	line-height: 1.5;
+	font-family: "Gilroy", sans-serif;
+	font-size: 16px;
+	color: #333;
+	background-color: #fff;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	border: none;
+	background: none;
+}
+.header {
+	padding: 24px 0;
+}
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 73px;
+}
+.header__nav {
+	display: flex;
+	align-items: center;
+	width: 60%;
+	justify-content: space-between;
+	gap: 12px;
+}
+.header__logo-img {
+	width: 183px;
+	height: 48px;
+}
+.header__nav-menu {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.header__btn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 40%;
+}
+.header__search {
+	display: flex;
+}
+.header__nav-list {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.header__nav-item {
+	padding: 8px 12px 8px 12px;
+}
+.header__nav-item_active {
+	color: rgb(198, 155, 123);
+	border-bottom: 1px solid rgb(198, 155, 123);
+}
+main {
+	background-color: #f7f6f5;
+}
+.main__info {
+	max-width: 386px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	padding-top: 64px;
+}
+.main__info__title {
+	font-weight: 600;
+	font-size: 56px;
+	text-transform: uppercase;
+	line-height: 68.6px;
+}
+.main__info__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+}
+.main__history {
+	max-height: 700px;
+}
+.main__history-items_wrapper1 {
+	padding-right: 20px;
+}
+main__history-items_wrapper2 {
+}
+.main__history-items {
+	background-color: #fff;
+}
+.main__history-item_firs {
+	max-width: 408px;
+	max-height: 145px;
+	margin: 40px 40px 24px;
+}
+.main__history-title {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 49px;
+	padding-bottom: 24px;
+	color: #3a3845;
+}
+.main__history-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #595667;
+}
+.main__history-img_first {
+	max-width: 488px;
+	max-height: 491px;
+}
+
+.main__history-container {
+	display: flex;
+}
+.main__history-item_second {
+	display: flex;
+}
+.main__history-item_third {
+	display: flex;
+}
