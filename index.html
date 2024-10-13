@@ -11,12 +11,13 @@
 		/>
 	</head>
 	<body>
+		<!-- header  -->
 		<header class="header">
 			<div class="container header__container">
+				<a href="#" class="header__logo">
+					<img class="header__logo-img" src="./images/hlogo.svg" alt="logo" />
+				</a>
 				<nav class="header__nav">
-					<a href="#" class="header__logo">
-						<img class="header__logo-img" src="./images/hlogo.svg" alt="logo" />
-					</a>
 					<ul class="header__nav-menu">
 						<li class="header__nav-item"><a class="header__nav-link" href="#">Home</a></li>
 						<li class="header__nav-item"><a class="header__nav-link" href="#">Shop</a></li>
@@ -27,10 +28,10 @@
 					</ul>
 				</nav>
 				<nav class="header__btn">
-					<div>
-						<button type="submit"><img src="./images/search.svg" alt="" /></button>
-						<input type="" placeholder="Search item..." />
-					</div>
+					<button type="submit">
+						<img src="./images/search.svg" alt="" />
+					</button>
+					<input type="" placeholder="Search item..." />
 					<ul class="header__nav-list">
 						<li class="header__nav-button">
 							<a class="header__nav-link" href="">
@@ -49,41 +50,41 @@
 						</li>
 					</ul>
 				</nav>
+				<div class="header__btn-mobile">
+					<img class="header__btn-mobile_img" src="./images/Menu__mobile-img.svg" alt="" />
+				</div>
 			</div>
 		</header>
+		<!--     main  about moon -->
 		<main class="main">
-			<div class="container">
-				<section class="main__info">
-					<h1 class="main__info__title">about moon</h1>
-					<p class="main__info__text">
-						Moon's handmade ceramic products have been around since 1650, let's explore our journey
-					</p>
-				</section>
-			</div>
+			<section class="main__info">
+				<h1 class="main__info__title">about moon</h1>
+				<p class="main__info__text">
+					Moon's handmade ceramic products have been around since 1650, let's explore our journey
+				</p>
+			</section>
+			<!-- history -->
 			<section class="main__history">
 				<div class="container main__history-container">
-					<div class="main__history-items_wrapper1">
-						<article class="main__history-items">
-							<div class="main__history-item_firs">
-								<h4 class="main__history-title">1910</h4>
-								<p class="main__history-text">
-									Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis
-									sit aliquam sit nullam neque sit amet consectetur adipiscing eli per sit.
-								</p>
-							</div>
-							<img
-								class="main__history-img main__history-img_first"
-								src="./images/1910.png"
-								alt=""
-								srcset="./images/1910.png 1x, ./images/19102x.png 2x"
-							/>
-						</article>
-					</div>
-					<div class="main__history-items_wrapper2">
-						<article class="main__history-items main__history-item_second">
-							<div class="ewrewrwe">
+					<article class="main__history-items main__history-items-first">
+						<h4 class="main__history-title">1910</h4>
+						<p class="main__history-text main__history-text_first">
+							Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
+							aliquam sit nullam neque sit amet consectetur adipiscing eli per sit.
+						</p>
+
+						<img
+							class="main__history-img"
+							src="./images/1910.png"
+							alt=""
+							srcset="./images/1910.png 1x, ./images/19102x.png 2x"
+						/>
+					</article>
+					<div class="main__history-items_wrapper">
+						<article class="main__history-items main__history-items-second">
+							<div class="main__history-items_container">
 								<h4 class="main__history-title">1990</h4>
-								<p class="main__history-text">
+								<p class="main__history-text main__history-text_second">
 									Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi. dolor sit amet
 									consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit
 								</p>
@@ -95,16 +96,16 @@
 								srcset="./images/1990.png 1x, ./images/19902x.png 2x"
 							/>
 						</article>
-						<article class="main__history-items main__history-item_third">
-							<div>
+						<article class="main__history-items main__history-items-third">
+							<div class="main__history-items_container">
 								<h4 class="main__history-title">2010</h4>
-								<p class="main__history-text">
+								<p class="main__history-text main__history-text_third">
 									Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus. sit
 									aliquam sit nullam neque ultrices.
 								</p>
 							</div>
 							<img
-								class="main__history-img"
+								class="main__history-img main__history-img_third"
 								src="./images/2010.png"
 								alt=""
 								srcset="./images/2010.png 1x, ./images/20102x.png 2x"
@@ -113,8 +114,9 @@
 					</div>
 				</div>
 			</section>
+			<!-- work -->
 			<section class="main__work">
-				<div class="container">
+				<div class="container main__work-container">
 					<img
 						class="main__work-img"
 						src="./images/hww.png"
@@ -146,8 +148,9 @@
 					</section>
 				</div>
 			</section>
+			<!-- meet our team -->
 			<section class="main__team">
-				<div class="container">
+				<div class="container main__team-container">
 					<h2 class="main__team-title">meet our team</h2>
 					<div class="main__team-workers">
 						<ul class="main__team-items">
@@ -203,31 +206,55 @@
 					</div>
 				</div>
 			</section>
+			<!-- subscription -->
 			<section class="main__subscription">
-				<div class="container">
+				<div class="container main__subscription-container">
 					<p class="main__subscription-text">Sign up for emails</p>
 					<h2 class="main__subscription-title">For news, collections & more</h2>
 					<form class="main__subscription-form" action="/" method="get">
-						<input name="s" placeholder="Enter your email address" type="search" />
-						<button type="submit">Sign up</button>
+						<input
+							class="main__subscription-input"
+							name="s"
+							placeholder="Enter your email address"
+							type="search"
+						/>
+						<button class="main__subscription-btn" type="submit">Sign up</button>
 					</form>
 				</div>
 			</section>
 		</main>
+		<section class="main__subscription-mobile">
+			<div class="container main__subscription-container_mobile">
+				<p class="main__subscription-text_mobile">Sign up for emails</p>
+				<h2 class="main__subscription-title_mobile">For news, collections & more</h2>
+				<form class="main__subscription-form_mobile" action="/" method="get">
+					<input
+						class="main__subscription-input_mobile"
+						type="text"
+						placeholder="Enter your email"
+					/>
+					<button class="main__subscription-btn_mobile" type="submit">Sign up</button>
+				</form>
+			</div>
+		</section>
+		<div class="main_color-container"></div>
+		<!-- footer -->
 		<footer class="footer">
-			<div class="container">
+			<div class="container footer__container">
 				<div class="footer__description">
 					<img class="footer__description-logo" src="./images/flogo.svg" alt="" />
 					<p class="footer__description-text">
-						Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam mauris sed ma
+						Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit
+						aliquam sit nullam
 					</p>
 					<button class="footer__description-btn" type="submit">
-						<a href="/">Get started<img src="" alt="" /></a>
+						<a class="footer__description-btn_text" href="/">Get started</a
+						><img class="footer__description-arrow" src="./images/Arrow rigth.svg" alt="" />
 					</button>
 				</div>
 				<nav class="footer__nav">
 					<ul class="footer__nav-items">
-						<li class="footer__nav-item"><a href="">About us</a></li>
+						<li class="footer__nav-item footer__nav-title"><a href="">About us</a></li>
 						<li class="footer__nav-item"><a href="">Mission</a></li>
 						<li class="footer__nav-item"><a href="">Our team</a></li>
 						<li class="footer__nav-item"><a href="">Awards</a></li>
@@ -235,15 +262,15 @@
 						<li class="footer__nav-item"><a href="">Privacy policy</a></li>
 					</ul>
 					<ul class="footer__nav-items">
-						<li class="footer__nav-item"><a href="">Services</a></li>
+						<li class="footer__nav-item footer__nav-title"><a href="">Services</a></li>
 						<li class="footer__nav-item"><a href="">Web design</a></li>
 						<li class="footer__nav-item"><a href="">Web development</a></li>
 						<li class="footer__nav-item"><a href="">Mobile design</a></li>
 						<li class="footer__nav-item"><a href="">UX/UI design</a></li>
 						<li class="footer__nav-item"><a href="">Branding design</a></li>
 					</ul>
-					<ul class="footer__nav-items">
-						<li class="footer__nav-item"><a href="">Portfolio</a></li>
+					<ul class="footer__nav-items footer__nav-items_third">
+						<li class="footer__nav-item footer__nav-title"><a href="">Portfolio</a></li>
 						<li class="footer__nav-item"><a href="">Corporate websites</a></li>
 						<li class="footer__nav-item"><a href="">E-commerce</a></li>
 						<li class="footer__nav-item"><a href="">Mobile apps</a></li>
@@ -251,10 +278,10 @@
 						<li class="footer__nav-item"><a href="">UX/UI projects</a></li>
 					</ul>
 				</nav>
-				<p class="footer__info">
-					Copyright © 2023 Moon | All Rights Reserved | Terms and Conditions | Privacy Policy
-				</p>
 			</div>
+			<p class="footer__info">
+				Copyright © 2023 Moon | All Rights Reserved | Terms and Conditions | Privacy Policy
+			</p>
 		</footer>
 	</body>
 </html>
